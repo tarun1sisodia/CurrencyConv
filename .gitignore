@@ -52,3 +52,9 @@ next-env.d.ts
 
 # analyzer
 /.analyze
+
+# cloudflare / opennext
+.open-next
+.wrangler
+.dev.vars
+
