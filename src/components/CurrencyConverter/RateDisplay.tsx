@@ -2,6 +2,7 @@
 
 import { memo } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
+import { CurrencySymbolIcon } from '@/components/CurrencySymbolIcon';
 import { Badge } from '@/components/ui/badge';
 import { RESULT_PRECISION } from '@/lib/constants';
 import { calculateConversion, formatRate, formatTimeAgo, parseAmount } from '@/lib/utils';
@@ -29,13 +30,18 @@ function RateDisplayInner({ amount, from, to, rate, timestamp, isStale }: RateDi
   return (
     <div className="space-y-2">
       <p className="text-muted-foreground text-sm">{t('resultLabel')}</p>
-      <p
-        className="text-4xl font-bold text-indigo-600 dark:text-indigo-400"
-        aria-live="polite"
-        aria-atomic="true"
-      >
-        {formatted} {to}
-      </p>
+      <div className="flex items-center gap-2">
+        <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-indigo-50 text-indigo-600 dark:bg-indigo-950/50 dark:text-indigo-400">
+          <CurrencySymbolIcon code={to} size={22} />
+        </span>
+        <p
+          className="text-4xl font-bold text-indigo-600 dark:text-indigo-400"
+          aria-live="polite"
+          aria-atomic="true"
+        >
+          {formatted} {to}
+        </p>
+      </div>
       <p className="text-muted-foreground text-sm">
         {t('rateLine', {
           from,

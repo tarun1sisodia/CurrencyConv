@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
+import { CurrencySymbolIcon } from '@/components/CurrencySymbolIcon';
 import { useCurrencyStore } from '@/hooks/useCurrencyStore';
 import { useExchangeRate } from '@/hooks/useExchangeRate';
 import { getCurrency, TABLE_CURRENCIES } from '@/lib/currencies';
@@ -61,10 +62,15 @@ export function MultiCurrencyTable() {
             {rows.map((row) => (
               <tr key={row.code} className="border-t">
                 <td className="py-2 font-medium">
-                  <span aria-hidden className="mr-2">
-                    {row.flag}
-                  </span>
-                  {row.code}
+                  <div className="flex items-center gap-1.5">
+                    <span aria-hidden className="text-base">
+                      {row.flag}
+                    </span>
+                    <span className="bg-muted text-muted-foreground flex h-5 w-5 items-center justify-center rounded">
+                      <CurrencySymbolIcon code={row.code} size={12} />
+                    </span>
+                    <span>{row.code}</span>
+                  </div>
                 </td>
                 <td className="py-2">{row.name}</td>
                 <td className="py-2 tabular-nums">

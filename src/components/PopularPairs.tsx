@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { CurrencySymbolIcon } from '@/components/CurrencySymbolIcon';
 import { useCurrencyStore } from '@/hooks/useCurrencyStore';
 import { getCurrency, POPULAR_PAIRS } from '@/lib/currencies';
 import { Link } from '@/i18n/navigation';
@@ -31,12 +32,17 @@ export function PopularPairs() {
               onClick={() => setPair(from, to)}
               className="bg-card focus-visible:ring-ring rounded-xl border p-4 text-left shadow-sm transition hover:border-indigo-400 focus-visible:ring-2"
             >
-              <p className="text-lg font-semibold">
-                <span aria-hidden>
-                  {fromOpt?.flag} {toOpt?.flag}
-                </span>{' '}
-                {from}/{to}
-              </p>
+              <div className="flex items-center justify-between">
+                <p className="text-lg font-semibold">
+                  <span aria-hidden>
+                    {fromOpt?.flag} {toOpt?.flag}
+                  </span>{' '}
+                  {from}/{to}
+                </p>
+                <span className="bg-muted text-muted-foreground flex h-6 w-6 items-center justify-center rounded">
+                  <CurrencySymbolIcon code={to} size={14} />
+                </span>
+              </div>
               <p className="text-muted-foreground mt-1 truncate text-xs">
                 {fromOpt?.name} → {toOpt?.name}
               </p>

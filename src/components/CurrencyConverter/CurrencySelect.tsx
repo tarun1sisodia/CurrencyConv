@@ -13,6 +13,7 @@ import {
   CommandList,
 } from '@/components/ui/command';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { CurrencySymbolIcon } from '@/components/CurrencySymbolIcon';
 import { CURRENCIES } from '@/lib/currencies';
 import { cn } from '@/lib/utils';
 import type { CurrencyOption } from '@/types/currency';
@@ -48,6 +49,9 @@ function CurrencySelectInner({ id, label, value, onChange }: CurrencySelectProps
             <span className="flex min-w-0 items-center gap-2">
               <span aria-hidden className="text-lg">
                 {selected?.flag}
+              </span>
+              <span className="bg-muted text-muted-foreground flex h-6 w-6 items-center justify-center rounded">
+                <CurrencySymbolIcon code={selected?.code ?? value} size={14} />
               </span>
               <span className="font-semibold">{selected?.code ?? value}</span>
               <span className="text-muted-foreground truncate">{selected?.name}</span>
@@ -94,6 +98,9 @@ function CurrencyRow({
     <CommandItem value={`${item.code} ${item.name}`} onSelect={onSelect}>
       <span aria-hidden className="text-lg">
         {item.flag}
+      </span>
+      <span className="bg-muted text-muted-foreground flex h-5 w-5 items-center justify-center rounded">
+        <CurrencySymbolIcon code={item.code} size={12} />
       </span>
       <span className="font-medium">{item.code}</span>
       <span className="text-muted-foreground truncate">{item.name}</span>
