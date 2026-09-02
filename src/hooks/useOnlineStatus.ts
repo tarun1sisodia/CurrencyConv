@@ -1,0 +1,27 @@
+'use client';
+
+import { useSyncExternalStore } from 'react';
+
+function subscribe(onStoreChange: () => void): () => void {
+  window.addEventListener('online', onStoreChange);
+  window.addEventListener('offline', onStoreChange);
+  return () => {
+    window.removeEventListener('online', onStoreChange);
+    window.removeEventListener('offline', onStoreChange);
+  };
+}
+
+function getSnapshot(): boolean {
+  return navigator.onLine;
+}
+
+function getServerSnapshot(): boolean {
+  return true;
+}
+
+/**
+ * Tracks `navigator.onLine` and live online/offline events.
+ */
+export function useOnlineStatus(): boolean {
+  return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+}

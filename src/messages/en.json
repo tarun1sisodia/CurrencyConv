@@ -1,0 +1,187 @@
+{
+  "meta": {
+    "siteName": "CurrencyConv",
+    "title": "Currency Converter – Live Exchange Rates | CurrencyConv",
+    "description": "Convert 160+ world currencies with live mid-market rates, charts, alerts, and offline support. Free, fast, and privacy-friendly.",
+    "ogAlt": "CurrencyConv live currency converter",
+    "pairTitle": "{from} to {to} – Live Exchange Rate | CurrencyConv",
+    "pairDescription": "Convert {fromName} ({from}) to {toName} ({to}) with live rates, a 7-day chart, and instant multi-currency quotes. Updated hourly."
+  },
+  "nav": {
+    "home": "Converter",
+    "favorites": "Favorites",
+    "alerts": "Alerts",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "skipToContent": "Skip to main content",
+    "openMenu": "Open menu",
+    "language": "Language",
+    "theme": "Color theme",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "themeSystem": "System",
+    "install": "Install app",
+    "dismissInstall": "Dismiss install prompt"
+  },
+  "hero": {
+    "title": "Live currency converter",
+    "subtitle": "Mid-market rates for 160+ currencies. Fast, accurate, and free to use."
+  },
+  "converter": {
+    "amountLabel": "Amount",
+    "fromLabel": "From",
+    "toLabel": "To",
+    "swap": "Swap currencies",
+    "searchCurrency": "Search currency",
+    "noCurrency": "No currencies match that search.",
+    "resultLabel": "Converted amount",
+    "rateLine": "1 {from} = {rate} {to}",
+    "updated": "Rates updated: {time}",
+    "outdated": "Rates may be outdated",
+    "offline": "You are offline. Showing last saved rates.",
+    "error": "We could not load live rates. Please try again.",
+    "retry": "Retry",
+    "star": "Save pair to favorites",
+    "unstar": "Remove pair from favorites",
+    "loading": "Loading exchange rates"
+  },
+  "popular": {
+    "title": "Popular currency pairs",
+    "subtitle": "Tap a pair to fill the converter instantly."
+  },
+  "how": {
+    "title": "How it works",
+    "step1Title": "Choose currencies",
+    "step1Body": "Pick a from and to currency. Search by code, country, or name.",
+    "step2Title": "Enter an amount",
+    "step2Body": "Type any amount. Conversion uses the latest cached mid-market rate.",
+    "step3Title": "Read the live rate",
+    "step3Body": "See the result, 7-day trend, and a table of other popular quotes."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "q1": "How often are exchange rates updated?",
+    "a1": "We refresh rates about once an hour from ExchangeRate-API, with Frankfurter (ECB) as a fallback. A last-known copy is stored on your device for offline use.",
+    "q2": "Is this converter free to use?",
+    "a2": "Yes. CurrencyConv is free for personal, non-commercial lookups. No account is required to convert currencies or save favorites.",
+    "q3": "Can I use these rates for commercial trading?",
+    "a3": "No. Rates are indicative mid-market references only and are not intended for trading, invoicing, or financial advice.",
+    "q4": "How do I convert USD to EUR?",
+    "a4": "Select USD in From, EUR in To, enter an amount, and the converted value appears instantly. You can also open the dedicated USD to EUR page.",
+    "q5": "Do you support offline conversion?",
+    "a5": "Yes. The app installs as a PWA and will use the last saved rates when you are offline, with a visible outdated badge."
+  },
+  "chart": {
+    "title": "7-day rate history",
+    "change": "{value}% over 7 days",
+    "unavailable": "Historical data is not available for this pair.",
+    "loading": "Loading chart"
+  },
+  "table": {
+    "title": "Convert to other currencies",
+    "currency": "Currency",
+    "code": "Code",
+    "amount": "Amount",
+    "sort": "Sort by {column}"
+  },
+  "alerts": {
+    "title": "Rate alerts",
+    "subtitle": "Get notified when a pair crosses a rate you care about. Alerts are stored on this device; no account is required.",
+    "pair": "Currency pair",
+    "target": "Target rate",
+    "direction": "Condition",
+    "above": "Notify when rate is at or above",
+    "below": "Notify when rate is at or below",
+    "create": "Create alert",
+    "empty": "You have no active alerts yet.",
+    "delete": "Delete alert",
+    "edit": "Edit alert",
+    "save": "Save changes",
+    "cancel": "Cancel",
+    "notifyHint": "Allow browser notifications so we can ping you while this tab is open.",
+    "created": "Alert saved.",
+    "invalid": "Enter a valid target rate greater than zero.",
+    "enableNotifications": "Enable notifications",
+    "triggered": "Triggered"
+  },
+  "favorites": {
+    "title": "Favorite pairs",
+    "subtitle": "Star any pair on the converter to pin it here with live rates.",
+    "empty": "No favorites yet. Convert a pair and tap the star to save it.",
+    "rate": "Live rate"
+  },
+  "embed": {
+    "title": "Embed this converter",
+    "subtitle": "Paste the snippet on any site. The widget respects theme and pair query params.",
+    "copy": "Copy embed code",
+    "copied": "Copied to clipboard",
+    "theme": "Widget theme",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "offline": {
+    "message": "You are offline. Showing cached rates that may be outdated."
+  },
+  "legal": {
+    "disclaimer": "Rates are indicative mid-market references, not for commercial or trading decisions. Data sourced from ExchangeRate-API and Frankfurter (ECB).",
+    "attribution": "Frankfurter data is published by the European Central Bank. ExchangeRate-API attribution per their terms of service.",
+    "privacyTitle": "Privacy policy",
+    "termsTitle": "Terms of use"
+  },
+  "privacy": {
+    "intro": "CurrencyConv is designed to work without an account. This page explains what is stored on your device and what is sent to our servers.",
+    "localTitle": "What stays on your device",
+    "localBody": "Currency preferences, favorites, rate alerts, last-known rates, language, theme, and cookie-consent choice are stored in localStorage or first-party cookies. These functional stores do not require consent under typical EU/UK guidance because they are strictly necessary to remember your settings.",
+    "serverTitle": "What we process on the server",
+    "serverBody": "The /api/rates endpoint fetches live FX data using a server-side API key. We do not create user accounts. Optional rate alerts may be mirrored in memory for cron checks, keyed to an anonymous client id stored locally — not to your name or email.",
+    "cookiesTitle": "Cookies and analytics",
+    "cookiesBody": "A NEXT_LOCALE cookie remembers your language so the first server render matches your choice. If you accept analytics in the consent banner, Vercel Analytics and Web Vitals cookies may be set. Rejecting analytics leaves only functional storage. We do not sell personal data.",
+    "alertsTitle": "Email and alerts",
+    "alertsBody": "Email is not required. Alerts run locally and, when you grant permission, via the browser Notification API. We do not send marketing email.",
+    "contactTitle": "Changes",
+    "contactBody": "We may update this policy as features change. The date of the latest revision is shown with the site version in the footer."
+  },
+  "terms": {
+    "intro": "By using CurrencyConv you agree to these terms.",
+    "useTitle": "Acceptable use",
+    "useBody": "The service is provided for personal, informational currency conversion. You may not scrape, overload, or redistribute the API without permission, or use rates as the sole basis for trading, payroll, or legal settlement.",
+    "dataTitle": "Data accuracy",
+    "dataBody": "Rates come from third-party providers and may be delayed, incomplete, or unavailable. We do not warrant fitness for a particular purpose.",
+    "liabilityTitle": "Liability",
+    "liabilityBody": "The site is provided “as is” without warranties. To the fullest extent permitted by law we are not liable for losses arising from use of the rates or the website.",
+    "lawTitle": "Contact",
+    "lawBody": "Questions about these terms can be sent via the project repository listed in the site footer."
+  },
+  "footer": {
+    "tagline": "Live FX conversion for 160+ currencies.",
+    "rights": "© {year} CurrencyConv. All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "That URL does not match a converter page or currency pair.",
+    "home": "Back to converter"
+  },
+  "cookie": {
+    "title": "Cookies & analytics",
+    "body": "We use a language cookie so the site loads in your language. Analytics cookies are optional and only set if you accept.",
+    "accept": "Accept analytics",
+    "reject": "Essential only",
+    "necessary": "Essential",
+    "analytics": "Analytics"
+  },
+  "pair": {
+    "related": "Related currency pairs",
+    "explain": "Convert {fromName} ({from}) to {toName} ({to}) using live mid-market rates. Figures are indicative and typically delayed by up to one hour. They are not a trading quote.",
+    "h1": "Convert {from} to {to}"
+  },
+  "common": {
+    "close": "Close",
+    "loading": "Loading",
+    "error": "Something went wrong.",
+    "errorTitle": "Something went wrong",
+    "errorBody": "An unexpected error occurred. You can try again.",
+    "retry": "Try again"
+  }
+}
