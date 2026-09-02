@@ -1,0 +1,187 @@
+{
+  "meta": {
+    "siteName": "CurrencyConv",
+    "title": "Conversor de divisas – Tipos de cambio en vivo | CurrencyConv",
+    "description": "Convierte más de 160 divisas con tipos mid-market en vivo, gráficos, alertas y modo sin conexión. Gratis, rápido y respetuoso con la privacidad.",
+    "ogAlt": "Conversor de divisas en vivo CurrencyConv",
+    "pairTitle": "{from} a {to} – Tipo de cambio en vivo | CurrencyConv",
+    "pairDescription": "Convierte {fromName} ({from}) a {toName} ({to}) con tipos en vivo, un gráfico de 7 días y cotizaciones instantáneas. Actualizado cada hora."
+  },
+  "nav": {
+    "home": "Conversor",
+    "favorites": "Favoritos",
+    "alerts": "Alertas",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "skipToContent": "Saltar al contenido principal",
+    "openMenu": "Abrir menú",
+    "language": "Idioma",
+    "theme": "Tema de color",
+    "themeLight": "Claro",
+    "themeDark": "Oscuro",
+    "themeSystem": "Sistema",
+    "install": "Instalar app",
+    "dismissInstall": "Cerrar aviso de instalación"
+  },
+  "hero": {
+    "title": "Conversor de divisas en vivo",
+    "subtitle": "Tipos mid-market para más de 160 divisas. Rápido, preciso y gratuito."
+  },
+  "converter": {
+    "amountLabel": "Importe",
+    "fromLabel": "De",
+    "toLabel": "A",
+    "swap": "Intercambiar divisas",
+    "searchCurrency": "Buscar divisa",
+    "noCurrency": "Ninguna divisa coincide con esa búsqueda.",
+    "resultLabel": "Importe convertido",
+    "rateLine": "1 {from} = {rate} {to}",
+    "updated": "Tipos actualizados: {time}",
+    "outdated": "Los tipos pueden estar desactualizados",
+    "offline": "Estás sin conexión. Mostrando los últimos tipos guardados.",
+    "error": "No pudimos cargar los tipos en vivo. Inténtalo de nuevo.",
+    "retry": "Reintentar",
+    "star": "Guardar par en favoritos",
+    "unstar": "Quitar par de favoritos",
+    "loading": "Cargando tipos de cambio"
+  },
+  "popular": {
+    "title": "Pares de divisas populares",
+    "subtitle": "Toca un par para rellenar el conversor al instante."
+  },
+  "how": {
+    "title": "Cómo funciona",
+    "step1Title": "Elige las divisas",
+    "step1Body": "Selecciona la divisa de origen y destino. Busca por código, país o nombre.",
+    "step2Title": "Introduce un importe",
+    "step2Body": "Escribe cualquier cantidad. La conversión usa el último tipo mid-market en caché.",
+    "step3Title": "Consulta el tipo en vivo",
+    "step3Body": "Verás el resultado, la tendencia de 7 días y una tabla de otras cotizaciones."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "q1": "¿Con qué frecuencia se actualizan los tipos?",
+    "a1": "Refrescamos los tipos aproximadamente cada hora desde ExchangeRate-API, con Frankfurter (BCE) como respaldo. Se guarda una copia en tu dispositivo para uso sin conexión.",
+    "q2": "¿El conversor es gratuito?",
+    "a2": "Sí. CurrencyConv es gratis para consultas personales no comerciales. No hace falta cuenta para convertir ni para guardar favoritos.",
+    "q3": "¿Puedo usar estos tipos para operar en mercados?",
+    "a3": "No. Los tipos son referencias mid-market indicativas y no están pensados para trading, facturación ni asesoramiento financiero.",
+    "q4": "¿Cómo convierto USD a EUR?",
+    "a4": "Selecciona USD en De, EUR en A, introduce un importe y el valor convertido aparece al instante. También puedes abrir la página dedicada de USD a EUR.",
+    "q5": "¿Funciona sin conexión?",
+    "a5": "Sí. La app se instala como PWA y usará los últimos tipos guardados cuando no haya red, con una etiqueta de desactualizado."
+  },
+  "chart": {
+    "title": "Historial de 7 días",
+    "change": "{value}% en 7 días",
+    "unavailable": "No hay datos históricos para este par.",
+    "loading": "Cargando gráfico"
+  },
+  "table": {
+    "title": "Convertir a otras divisas",
+    "currency": "Divisa",
+    "code": "Código",
+    "amount": "Importe",
+    "sort": "Ordenar por {column}"
+  },
+  "alerts": {
+    "title": "Alertas de tipo",
+    "subtitle": "Recibe un aviso cuando un par cruce el tipo que te interesa. Las alertas se guardan en este dispositivo; no hace falta cuenta.",
+    "pair": "Par de divisas",
+    "target": "Tipo objetivo",
+    "direction": "Condición",
+    "above": "Avisar cuando el tipo sea igual o superior",
+    "below": "Avisar cuando el tipo sea igual o inferior",
+    "create": "Crear alerta",
+    "empty": "Aún no tienes alertas activas.",
+    "delete": "Eliminar alerta",
+    "edit": "Editar alerta",
+    "save": "Guardar cambios",
+    "cancel": "Cancelar",
+    "notifyHint": "Permite las notificaciones del navegador para avisarte con esta pestaña abierta.",
+    "created": "Alerta guardada.",
+    "invalid": "Introduce un tipo objetivo válido mayor que cero.",
+    "enableNotifications": "Activar notificaciones",
+    "triggered": "Activada"
+  },
+  "favorites": {
+    "title": "Pares favoritos",
+    "subtitle": "Marca con estrella cualquier par en el conversor para verlo aquí con tipos en vivo.",
+    "empty": "Todavía no hay favoritos. Convierte un par y toca la estrella para guardarlo.",
+    "rate": "Tipo en vivo"
+  },
+  "embed": {
+    "title": "Inserta este conversor",
+    "subtitle": "Pega el fragmento en cualquier sitio. El widget respeta los parámetros theme y pair.",
+    "copy": "Copiar código",
+    "copied": "Copiado al portapapeles",
+    "theme": "Tema del widget",
+    "light": "Claro",
+    "dark": "Oscuro"
+  },
+  "offline": {
+    "message": "Estás sin conexión. Mostrando tipos en caché que pueden estar desactualizados."
+  },
+  "legal": {
+    "disclaimer": "Los tipos son referencias mid-market indicativas, no para decisiones comerciales o de trading. Datos de ExchangeRate-API y Frankfurter (BCE).",
+    "attribution": "Los datos de Frankfurter los publica el Banco Central Europeo. Atribución de ExchangeRate-API según sus términos.",
+    "privacyTitle": "Política de privacidad",
+    "termsTitle": "Términos de uso"
+  },
+  "privacy": {
+    "intro": "CurrencyConv funciona sin cuenta. Esta página explica qué se guarda en tu dispositivo y qué se envía a nuestros servidores.",
+    "localTitle": "Qué permanece en tu dispositivo",
+    "localBody": "Preferencias de divisa, favoritos, alertas, últimos tipos, idioma, tema y el consentimiento de cookies se guardan en localStorage o cookies propias. Estos almacenes funcionales no suelen requerir consentimiento en la UE/UK porque son estrictamente necesarios.",
+    "serverTitle": "Qué procesamos en el servidor",
+    "serverBody": "El endpoint /api/rates obtiene datos FX con una clave de API del servidor. No creamos cuentas. Las alertas opcionales pueden replicarse en memoria para el cron, asociadas a un id anónimo local — no a tu nombre ni correo.",
+    "cookiesTitle": "Cookies y analítica",
+    "cookiesBody": "La cookie NEXT_LOCALE recuerda tu idioma para que la primera pintura coincida. Si aceptas analítica, pueden establecerse cookies de Vercel Analytics y Web Vitals. Si rechazas, solo queda el almacenamiento funcional. No vendemos datos personales.",
+    "alertsTitle": "Correo y alertas",
+    "alertsBody": "No se requiere correo. Las alertas se ejecutan en local y, si das permiso, con la Notification API del navegador. No enviamos email de marketing.",
+    "contactTitle": "Cambios",
+    "contactBody": "Podemos actualizar esta política si cambian las funciones. La revisión más reciente se indica con la versión en el pie."
+  },
+  "terms": {
+    "intro": "Al usar CurrencyConv aceptas estos términos.",
+    "useTitle": "Uso aceptable",
+    "useBody": "El servicio se ofrece para conversión personal e informativa. No puedes extraer, saturar ni redistribuir la API sin permiso, ni usar los tipos como única base para trading, nóminas o liquidaciones legales.",
+    "dataTitle": "Exactitud de los datos",
+    "dataBody": "Los tipos proceden de proveedores terceros y pueden ir retrasados, incompletos o no estar disponibles. No garantizamos idoneidad para un fin concreto.",
+    "liabilityTitle": "Responsabilidad",
+    "liabilityBody": "El sitio se ofrece «tal cual» sin garantías. En la máxima medida permitida por la ley no somos responsables de pérdidas derivadas del uso de los tipos o del sitio.",
+    "lawTitle": "Contacto",
+    "lawBody": "Las dudas sobre estos términos pueden enviarse a través del repositorio del proyecto indicado en el pie."
+  },
+  "footer": {
+    "tagline": "Conversión FX en vivo para más de 160 divisas.",
+    "rights": "© {year} CurrencyConv. Todos los derechos reservados.",
+    "privacy": "Privacidad",
+    "terms": "Términos"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "body": "Esa URL no coincide con el conversor ni con un par de divisas.",
+    "home": "Volver al conversor"
+  },
+  "cookie": {
+    "title": "Cookies y analítica",
+    "body": "Usamos una cookie de idioma para cargar el sitio en tu lengua. Las cookies de analítica son opcionales y solo se activan si aceptas.",
+    "accept": "Aceptar analítica",
+    "reject": "Solo esenciales",
+    "necessary": "Esenciales",
+    "analytics": "Analítica"
+  },
+  "pair": {
+    "related": "Pares de divisas relacionados",
+    "explain": "Convierte {fromName} ({from}) a {toName} ({to}) con tipos mid-market en vivo. Las cifras son indicativas y suelen retrasarse hasta una hora. No son una cotización de trading.",
+    "h1": "Convertir {from} a {to}"
+  },
+  "common": {
+    "close": "Cerrar",
+    "loading": "Cargando",
+    "error": "Algo salió mal.",
+    "errorTitle": "Algo salió mal",
+    "errorBody": "Ocurrió un error inesperado. Puedes intentarlo de nuevo.",
+    "retry": "Reintentar"
+  }
+}
