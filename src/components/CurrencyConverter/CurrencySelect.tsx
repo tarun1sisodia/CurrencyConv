@@ -47,11 +47,8 @@ function CurrencySelectInner({ id, label, value, onChange }: CurrencySelectProps
             className="h-12 w-full justify-between font-normal"
           >
             <span className="flex min-w-0 items-center gap-2">
-              <span aria-hidden className="text-lg">
-                {selected?.flag}
-              </span>
-              <span className="bg-muted text-muted-foreground flex h-6 w-6 items-center justify-center rounded">
-                <CurrencySymbolIcon code={selected?.code ?? value} size={14} />
+              <span className="bg-primary/10 text-primary flex h-7 w-7 items-center justify-center rounded-lg">
+                <CurrencySymbolIcon code={selected?.code ?? value} size={16} />
               </span>
               <span className="font-semibold">{selected?.code ?? value}</span>
               <span className="text-muted-foreground truncate">{selected?.name}</span>
@@ -96,11 +93,8 @@ function CurrencyRow({
 }) {
   return (
     <CommandItem value={`${item.code} ${item.name}`} onSelect={onSelect}>
-      <span aria-hidden className="text-lg">
-        {item.flag}
-      </span>
-      <span className="bg-muted text-muted-foreground flex h-5 w-5 items-center justify-center rounded">
-        <CurrencySymbolIcon code={item.code} size={12} />
+      <span className="bg-muted text-muted-foreground flex h-6 w-6 items-center justify-center rounded-md">
+        <CurrencySymbolIcon code={item.code} size={14} />
       </span>
       <span className="font-medium">{item.code}</span>
       <span className="text-muted-foreground truncate">{item.name}</span>

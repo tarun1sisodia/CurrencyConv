@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { CurrencyConverter } from '@/components/CurrencyConverter';
+import { CurrencySymbolIcon } from '@/components/CurrencySymbolIcon';
 import { PairHydrator } from '@/components/PairHydrator';
 import { StructuredData } from '@/components/SEO/StructuredData';
 import { getCurrency, getRelatedPairs, isValidCurrencyCode, TOP_SEO_PAIRS } from '@/lib/currencies';
@@ -106,9 +107,15 @@ export default async function PairPage({ params }: PairPageProps) {
           {' / '}
           {from} → {to}
         </p>
-        <h1 className="text-3xl font-bold">
-          {t('pair.h1', { from, to })} {fromOpt?.flag} {toOpt?.flag}
-        </h1>
+        <div className="flex items-center gap-3">
+          <span className="bg-primary/10 text-primary flex h-10 w-10 items-center justify-center rounded-xl">
+            <CurrencySymbolIcon code={from} size={22} />
+          </span>
+          <h1 className="text-3xl font-bold">{t('pair.h1', { from, to })}</h1>
+          <span className="bg-muted text-muted-foreground flex h-10 w-10 items-center justify-center rounded-xl">
+            <CurrencySymbolIcon code={to} size={22} />
+          </span>
+        </div>
         <p className="text-muted-foreground max-w-2xl">
           {t('pair.explain', {
             from,

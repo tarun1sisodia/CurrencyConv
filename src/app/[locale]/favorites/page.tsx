@@ -5,7 +5,7 @@ import { Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useCurrencyStore } from '@/hooks/useCurrencyStore';
 import { useExchangeRate } from '@/hooks/useExchangeRate';
-import { getCurrency } from '@/lib/currencies';
+import { CurrencySymbolIcon } from '@/components/CurrencySymbolIcon';
 import { formatRate, parsePairKey } from '@/lib/utils';
 import { Link } from '@/i18n/navigation';
 
@@ -52,8 +52,6 @@ function FavoriteRow({
   const to = parsed?.to ?? 'EUR';
   const { data } = useExchangeRate(from);
   const rate = data?.rates[to];
-  const fromOpt = getCurrency(from);
-  const toOpt = getCurrency(to);
 
   return (
     <li className="bg-card flex items-center justify-between gap-3 rounded-xl border p-4">
@@ -62,9 +60,17 @@ function FavoriteRow({
         className="min-w-0 flex-1"
         onClick={() => onOpen(from, to)}
       >
-        <p className="font-semibold">
-          {fromOpt?.flag} {from} → {toOpt?.flag} {to}
-        </p>
+        <div className="flex items-center gap-2">
+          <span className="bg-primary/10 text-primary flex h-7 w-7 items-center justify-center rounded-lg">
+            <CurrencySymbolIcon code={from} size={15} />
+          </span>
+          <p className="font-semibold">
+            {from} → {to}
+          </p>
+          <span className="bg-muted text-muted-foreground flex h-7 w-7 items-center justify-center rounded-lg">
+            <CurrencySymbolIcon code={to} size={15} />
+          </span>
+        </div>
         <p className="text-muted-foreground text-sm">
           {t('rate')}: {typeof rate === 'number' ? formatRate(rate) : '—'}
         </p>

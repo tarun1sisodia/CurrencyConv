@@ -62,12 +62,9 @@ export function MultiCurrencyTable() {
             {rows.map((row) => (
               <tr key={row.code} className="border-t">
                 <td className="py-2 font-medium">
-                  <div className="flex items-center gap-1.5">
-                    <span aria-hidden className="text-base">
-                      {row.flag}
-                    </span>
-                    <span className="bg-muted text-muted-foreground flex h-5 w-5 items-center justify-center rounded">
-                      <CurrencySymbolIcon code={row.code} size={12} />
+                  <div className="flex items-center gap-2">
+                    <span className="bg-muted text-muted-foreground flex h-6 w-6 items-center justify-center rounded-md">
+                      <CurrencySymbolIcon code={row.code} size={14} />
                     </span>
                     <span>{row.code}</span>
                   </div>

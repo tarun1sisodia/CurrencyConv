@@ -33,14 +33,16 @@ export function PopularPairs() {
               className="bg-card focus-visible:ring-ring rounded-xl border p-4 text-left shadow-sm transition hover:border-indigo-400 focus-visible:ring-2"
             >
               <div className="flex items-center justify-between">
-                <p className="text-lg font-semibold">
-                  <span aria-hidden>
-                    {fromOpt?.flag} {toOpt?.flag}
-                  </span>{' '}
-                  {from}/{to}
-                </p>
-                <span className="bg-muted text-muted-foreground flex h-6 w-6 items-center justify-center rounded">
-                  <CurrencySymbolIcon code={to} size={14} />
+                <div className="flex items-center gap-2">
+                  <span className="bg-primary/10 text-primary flex h-7 w-7 items-center justify-center rounded-lg">
+                    <CurrencySymbolIcon code={from} size={15} />
+                  </span>
+                  <p className="text-lg font-semibold">
+                    {from}/{to}
+                  </p>
+                </div>
+                <span className="bg-muted text-muted-foreground flex h-7 w-7 items-center justify-center rounded-lg">
+                  <CurrencySymbolIcon code={to} size={15} />
                 </span>
               </div>
               <p className="text-muted-foreground mt-1 truncate text-xs">
